@@ -1,6 +1,7 @@
 require 'zip/zip'
 require 'zip/zipfilesystem'
 require 'cfpropertylist'
+require File.expand_path('../../lib/ipa/png_file', __FILE__)
 
 module IPA
 	class IPAFile
