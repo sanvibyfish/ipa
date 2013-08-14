@@ -38,7 +38,7 @@ module IPA
 			@zipfile.close
 		end
 
-       def self.normalize_png(oldPNG)
+      def normalize_png(oldPNG)
       pngheader = "\x89PNG\r\n\x1a\n"
 
       if oldPNG[0...8] != pngheader
