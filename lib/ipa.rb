@@ -49,7 +49,9 @@ module IPA
 		def payload_file(filename, &block)
 			data = @zipfile.read(payload_path(filename))
 			yield data unless block.nil?
-			data
+		      if data
+		        IPA::PngFile.normalize_png(data)
+      		end
 		end
 
 		def info
